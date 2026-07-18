@@ -23,7 +23,7 @@ top_path = paths.most_common(1)[0][0] if paths else ""
 with open("/app/report.json", "w") as out:
     json.dump(
         {
-            "total_requests": total, #Bug, changed intentionally to 5 instead of total "6"
+            "total_requests": total, 
             "unique_ips": len(ips),
             "top_path": top_path,
         },
